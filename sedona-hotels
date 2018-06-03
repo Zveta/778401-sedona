@@ -32,7 +32,7 @@
     
 <!--Сортировка отелей-->
     <section>
-        <h2 class="page-title">Найдено:3</h1>
+        <h2 class="page-title">Найдено:3</h2>
         <p>Сортировка:</p>
         <ul class="breadcrumbs">
             <li class="breadcrumbs-current">По цене</li>
@@ -51,6 +51,7 @@
                 </a>
             </li>
         </ul>
+    </section>
       
       <!--Список отелей--> 
     <section class="hotels">
@@ -112,7 +113,9 @@
                     <p>Рейтинг: 9,2</p>
                 </div>
             </li>
-        </section>
+        </ul>
+    </section>
+    </main>
         
     
     
