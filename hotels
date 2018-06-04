@@ -6,31 +6,30 @@
   </head>
   <body>
   
-  <!--хедер-->
-      <header class="main-header">
-        <div>
-            <img src="logo.svg" alt="Логотип Седоны">
-        </div>
-        <nav class="main-navigation">
-            <ul class="site-navigation">
-              <li><a href="info.html">Информация</a></li>
-              <li><a href="media.html">Фото и видео</a></li>
-              <li><a href="map.html">Карта штата</a></li>
-              <li><a href="hotels.html">Гостиницы</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-      <h1 class="visually-hidden">Поиск по отелям</h1>
-    
-    <!--Форма поиска-->
+  <header class="main-header">
+    <nav class="main-navigation">
+      <ul class="site-navigation">
+        <li><a href="info.html">Информация</a></li>
+        <li><a href="media.html">Фото и видео</a></li>
+        <li>
+          <a href="home.html">
+                  <span class="visually-hidden">Главная<span>
+                  <img src=logo.svg alt="Главная">
+          </a>
+        </li>
+        <li><a href="map.html">Карта штата</a></li>
+        <li><a href="hotels.html">Гостиницы</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <h1 class="visually-hidden">Поиск по отелям</h1>
     <section class="filters">
-        <h2 class="visually-hidden">Форма поиска по отелям</h2>
-        <!-- Вставить сюда форму -->
+      <h2 class="visually-hidden">Форма поиска по отелям</h2>
+      <span><!-- Вставить сюда форму -->
+      </span>
     </section>
-    
-<!--Сортировка отелей-->
     <section>
         <h2 class="page-title">Найдено:3</h2>
         <p>Сортировка:</p>
@@ -117,31 +116,17 @@
     </section>
     </main>
         
-    
-    
-    
-    <!--футер-->
-    
-        <footer>
-            <section class="tag">
-                <p>#VisitSedona</p>
-            </section>
-            <section class="social">
-                <a class="twitter" href="#">
-                    <img src="twitter.svg" alt="твиттер">
-                </a>
-                <a class="facebook" href="#">
-                    <img src="facebook.svg" alt="facebook">
-                </a>
-                <a class="youtube" href="#">
-                    <img src="youtube.svg" alt="youtube">
-                </a>
-            </section>
-            <section class="copyright">
-                <p>Website by</p>
-                <a href="htmlacademy.ru/intensive/htmlcss">
-                    <img src="html-academy-logo.svg" alt="HTML Academy">
-                </a>  
-            </section>    
-        </footer>
+  <footer>
+    <p class="tag">#VisitSedona</p>
+    <div class="footer-social">
+      <ul>
+        <li><a class="social-button" href="#">Вконтакте</a></li>
+        <li><a class="social-button" href="#">Фейсбук</a></li>
+        <li><a class="social-button" href="#">Инстаграм</a></li>
+      </ul>
+    </div>
+    <p class="copyright">
+      <b>Website by</b> <a href="https://htmlacademy.ru"><img src="html-academy-logo.svg" alt="HTML Academy"></a>        
+    </p>
+  </footer>
     </body>
