@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Svetlana Gorbunova](https://up.htmlacademy.ru/htmlcss/21/user/778401).
-* Наставник: Александр Григорьев.
+* Наставник: [Александр Григорьев](https://up.htmlacademy.ru/htmlcss/21/user/ххх)
 
 ---
 
