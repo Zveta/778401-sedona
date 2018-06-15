@@ -1,0 +1,309 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  
+  background-color: #ffffff;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-weight: bold;
+}
+
+.main-navigation .site-navigation {
+  list-style: none;
+}
+
+.main-navigation a {
+  color: #000000;
+}
+
+.main-navigation a:hover {
+  color: #82b3d3;
+}
+
+.main-navigation a:focus {
+  color: #a0958f;
+}
+
+.main-navigation a:active {
+  color: #dddddd;
+}
+
+.intro p {
+  background-image: url("/img/intro_image.jpg");
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-sedona .title {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.features-list {
+  line-height: 21px;
+  list-style: none;
+}
+
+.type-1 {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.type-3 {
+  background-color: #eeeeee;
+}
+
+.call-to-action .title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+.call-to-action .description {
+  line-height: 24px;  
+}
+
+.button {
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.call-to-action .button {
+  background-color: #766357;  
+}
+
+.call-to-action .button:hover {
+  background-color: #604e44;
+}
+
+.call-to-action .button:active {
+  color: #928982;
+  background-color: #503e32;
+}
+
+.search-form {
+  font-weight: bold;  
+}
+
+.fields {
+  font-size: inherit;
+  line-height: inherit;
+  text-align: left;
+  
+  background-color: #f2f2f2;
+}
+
+.fields:hover {
+  background-color: #ebebeb;
+}
+
+.fields:focus{
+  background-color: #ffffff;
+}
+
+.search-form legend {
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: bold;  
+  background-color: #766357;
+}
+
+.search-form .button {
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: bold;
+  background-color: #82b3d3;
+}
+
+.search-form .button:hover {
+  background-color: #669ebf;
+}
+
+.search-form .button:active {
+  color: #5297be;
+  background-color: #5596be;
+}
+
+
+.tag {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.social-list {
+  list-style: none;
+}
+
+.social-button {
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: bold;
+  background-color: #82b3d3;
+}
+
+.social-button:hover {
+  background-color: #669ebf;
+}
+
+.social-button:active {
+  color: #5297be;
+  background-color: #5596be;
+}
+
+.filter {
+  color: #ffffff;
+  
+  background-color: #81b3d2;
+  background-image: url(/img/hotels_background.jpg);
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.filter legend {
+  font-weight: bold;  
+}
+
+.filter input:disabled {
+  color:#6a6a6a;  
+}
+
+.filter .button {
+  font-size: 14px;
+  line-height: 26px;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.sort strong {
+  font-size: 21px;
+}
+
+.sort-list {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort-current {
+  color: #82b3d3;  
+}
+
+.sort-list a {
+  color: #dddddd;
+  border-bottom: 1px dotted #0088CC;
+}
+
+.sort-list a:hover {
+  color: #82b3d3;
+}
+
+.sort-list a:active {
+  color: #000000;
+  border-bottom: none;
+}
+
+a .order {
+  color: #8b8b8b;
+}
+
+a .order:hover {
+  color: #000000;
+}
+
+a .order:focus,
+a .order:active {
+  color: #82b3d3;
+}
+
+.hotel-description h3 {
+  font-size: 21px;
+  font-weight: bold;
+  
+  line-height: 26px;
+}
+
+.hotel-description h3:hover {
+ color: #82b3d3; 
+}
+
+.hotel-description h3:active {
+  color: #dddddd;
+}
+
+.hotel-description .button {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 21px;
+  
+  background-color: #82b3d3;
+}
+
+.hotel-description .button:hover {
+  background-color: #669ebf;
+}
+
+.hotel-description .button:active {
+  color: #5297be;
+  background-color: #5596be;
+}
+
+.book:hover {
+    background-color: #604e44;
+}
+
+.book:active {
+  color: #928982;
+  background-color: #503e32;
+}
+
+.hotel-rating b {
+  color: #8b8b8b;
+  background-color: #f2f2f2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

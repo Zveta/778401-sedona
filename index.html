@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
@@ -26,14 +29,15 @@
   <main>
     <div class="intro">
       <h1 class="visually-hidden">Поиск гостиниц в Седоне</h1>
+      <p>уруру</p>    
     </div>  
     <section class="about-sedona">
       <h2 class="visually-hidden">Причины поехать в Седону</h2>
       <p class="title">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
-      <p class="description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+      <p class="description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон.</p>
       <ul class="features-list">
         <li>
-          <div class="feature-type-1">
+          <div class="feature-item type-1">
             <div class="content">
               <h3>Настоящий городок</h3>
               <p>- №1 -</p>
@@ -43,25 +47,25 @@
           </div>
         </li>
         <li>
-          <div class="feature-type-2">
+          <div class="feature-item type-2">
             <h3>Жилье</h3>
             <p>Рекомендуем пожить в настоящем отеле, все как в кино!</p>
           </div>
         </li>
         <li>
-          <div class="feature-type-2">
+          <div class="feature-item type-2">
             <h3>Еда</h3>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
         </li>
         <li>
-          <div class="feature-type-2">
+          <div class="feature-item type-2">
             <h3>Сувениры</h3>
             <p>Не только китайского, но и местного производства!</p>
           </div>
         </li>
         <li>
-          <div class="feature-type-1">
+          <div class="feature-item type-1">
             <div class="content">
               <h3>Там есть мост дьявола</h3>
               <p>- №2 -</p>
@@ -73,21 +77,21 @@
           </div>
         </li>
         <li>
-          <div class="feature-type-3">
+          <div class="feature-item type-3">
             <h3>Небольшая площадь</h3>
             <p>- №3 -</p>
             <p>Все достопримечательности находятся очень близко</p>
           </div>
         </li>
         <li>
-          <div class="feature-type-3">
+          <div class="feature-item type-3">
             <h3>Красивая дорога</h3>
             <p>- №4 -</p>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
         </li>
         <li>
-          <div class="feature-type-3">
+          <div class="feature-item type-3">
             <h2>Мало туристов</h2>
             <p>- №5 -</p>
             <p>Большинство едет в Гранд-Каньон и толпится там</p>
@@ -101,7 +105,7 @@
       <div class="call-to-action">
         <p class="title">Заинтересовались?</p>
         <p class="description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="button" href="#">Поиск гостиниц в Седоне</a>
+        <a class="button" href="#">Поиск гостиницы в Седоне</a>
       </div>
       <div class="map">
         <span>
@@ -112,22 +116,24 @@
     <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
       <fieldset>
         <legend>Поиск гостиницы в Седоне</legend>
-        <div class="date check-in">
-          <label for="check-in">Дата заезда</label>
-          <input type="date" class="date" id="check-in" name="check-in" value="2018-04-04">
-        </div>                                                                                       
-        <div class="date check-out">
-          <label for="check-out">Дата выезда</label>
-          <input type="date" class="date" id="check-out" name="check-out" value="2018-07-04">
-        </div>
-        <div class="number-adults">
-          <label for="adults-number">Взрослые</label>
-          <input type="number" id="adults-number" name="adults-number" value="2">
-        </div>
-        <div class="number-children">
-           <label for="children-number">Дети</label>
-            <input type="number" id="children-number" name="children-number" value="0">
-        </div>
+        <div class="fields">
+          <div class="date check-in">
+            <label for="check-in">Дата заезда</label>
+            <input type="date" class="date" id="check-in" name="check-in" value="2018-04-04">
+          </div>    
+          <div class="date check-out">
+            <label for="check-out">Дата выезда</label>
+            <input type="date" class="date" id="check-out" name="check-out" value="2018-07-04">
+          </div>
+          <div class="number-adults">
+            <label for="adults-number">Взрослые</label>
+            <input type="number" id="adults-number" name="adults-number" value="2">
+          </div>
+          <div class="number-children">
+             <label for="children-number">Дети</label>
+              <input type="number" id="children-number" name="children-number" value="0">
+          </div>
+        </div>     
         <div class="button">
           <input type="submit" value="Найти">
         </div>
@@ -137,7 +143,7 @@
   </main>
   
   <footer>
-    <p class="tag">#VisitSedona</p>
+    <p class="tag">#visitsedona</p>
     <div class="footer-social">
       <ul class="social-list">
         <li><a class="social-button" href="#">Вконтакте</a></li>
@@ -146,7 +152,7 @@
       </ul>
     </div>
     <p class="copyright">
-      <b>Website by</b> <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" alt="HTML Academy"></a>        
+      <p>Website by</p> <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" alt="HTML Academy"></a>        
     </p>
   </footer>
 </body>
