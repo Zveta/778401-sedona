@@ -22,11 +22,10 @@ body {
   text-align: center;
 
   background-color: #82b3d3;
-  border: none;
 }
 
 .button:hover {
-  color: #ffffff;
+  color:#ffffff;
   background-color: #669ec1;
 }
 
@@ -43,14 +42,12 @@ a {
 a:hover {
   color: #82b3d3;
 }
-a:focus {
-  color: #a0958f;
-}
+
 a:active {
   color: #dddddd;
 }
 
-.index-content {
+.container {
   background-color: #ffffff;
 }
 
@@ -61,12 +58,6 @@ a:active {
 
 .main-navigation .site-navigation {
   list-style: none;
-}
-
-.intro-image {
-  background-image: url("../img/intro_image.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
 }
 
 .about-sedona .title {
@@ -104,6 +95,7 @@ a:active {
 }
 
 .form-intro .button {
+  color: #ffffff;
   background-color: #766357;  
 }
 
@@ -116,28 +108,37 @@ a:active {
   background-color: #503e32;
 }
 
-.search-form {
+.form {
   font-weight: bold;  
 }
 
-.fields {
-  font-size: inherit;
-  line-height: inherit;
-  text-align: left;
+.form fieldset {
+  border: none;
 }
 
-.form input[type="date"],
-.form input[type="number"], {
+.form legend {
+  font-size: 21px;
+  
+  color: #ffffff;
+  background-color: #766357;  
+}
+
+.form .date,
+.form .number {
+  font-weight: bold;
+  text-transform: uppercase;
+  
   background-color: #f2f2f2;
+  padding:5px;
 }
 
-.form input[type="date"]:hover,
-.form input[type="number"]:hover, {
+.form .date:hover,
+.form .number:hover {
   background-color: #ebebeb;
 }
 
-.form input[type="date"]:focus,
-.form input[type="number"]:focus, {
+.form .date:focus,
+.form .number:focus {
   background-color: #ffffff;
 }
 
@@ -148,24 +149,6 @@ a:active {
 
 .social-list {
   list-style: none;
-  font-weight: bold;
-}
-
-.social-button {
-  color: #ffffff;
-  font-size: 21px;
-  font-weight: bold;
-  background-color: #82b3d3;
-}
-
-.social-button:hover {
-  color: #ffffff;
-  background-color: #669ebf;
-}
-
-.social-button:active {
-  color: #5297be;
-  background-color: #5596be;
 }
 
 .copyright .button {
@@ -181,9 +164,12 @@ a:active {
   color: #dddddd;  
 }
 
+.site-navigation-current {
+  color: #766357;
+}
+
 .filters {
   color: #ffffff;
-  text-align: left;
   
   background-color: #81b3d2;
   background-image: url(/img/hotels_background.jpg);
@@ -192,36 +178,26 @@ a:active {
   background-repeat: no-repeat;
 }
 
-.filter ul {
-  list-style: none;
-}
-
-.filter fieldset {
-  border: none;
-}
-
 .filter legend {
-  color: #ffffff;
   font-size: 16px;
   line-height: 21px;
   font-weight: bold;
 }
 
-.filter input:disabled {
-  color:#6a6a6a;  
+.filter fieldset {
+  border: none;
+}
+  
+.filter-group {
+  text-align: left;
 }
 
-.button .filter-button {
-  font-family: inherit;
-  font-size: 14px;
-  font-weight:normal;
-  
-  color: #ffffff;
-  background-color: #000000;
-  text-transform: uppercase;
-  text-align: center;
-  border-color: #ffffff;
-  vertical-align: middle;  
+.filter-group ul {
+  list-style: none;
+}
+
+.filter .checkbox:disabled {
+  color:#6a6a6a;  
 }
 
 .sort {
@@ -238,62 +214,46 @@ a:active {
   list-style: none;
 }
 
-.sort-current {
+.sort-list-current {
   color: #82b3d3;
 }
 
-.sort-list a {
+.sort-list .sort-item {
   color: #dddddd;
   border-bottom: 1px dotted #82b3d3;
 }
 
-.sort-list a:hover {
+.sort-list .sort-item:hover {
   color: #82b3d3;
 }
 
-.sort-list a:active {
+.sort-list .sort-item:active {
   color: #000000;  
   border-bottom: none;
 }
 
-.sort-list .order-current {
+.list-order-current {
   color: #82b3d3;
   border-bottom: none;
 }
 
 .sort-list .order {
   color: #dddddd;
-  border-bottom: none;
+}
+
+.sort-list .order:hover {
+  color: #000000;
+}
+
+.sort-list .order:active {
+  color: #82b3d3;
 }
 
 .hotel-description h3 {
   font-size: 21px;
   font-weight: bold;
-  
   line-height: 26px;
 }
-
-.hotel-description .book {
-  font-family: inherit;
-  font-size: 21px;
-  font-weight:bold;
-  
-  color: #ffffff;
-  background-color: #766357;
-  text-transform: uppercase;
-  text-align: center;
-  vertical-align: middle;  
-}
-
-.hotel-description .book:hover {
-  background-color: #604e44;
-}
-
-.hotel-description .book:active {
-  color: #928982;
-  background-color: #503e32;
-}
-
 
 .hotel-description h3:hover {
  color: #82b3d3; 
@@ -303,7 +263,32 @@ a:active {
  color: #dddddd; 
 }
 
-.hotel-rating {
+.hotel-description .book-button {  
+  font-family: inherit;
+  font-size:21px;
+  font-weight: bold;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  text-align: center;
+  
+  background-color: #766357;   
+}
+
+.hotel-description .book-button:hover {
+  background-color: #604e44;
+}
+
+.hotel-description .book-button:active {
+  color: #928982;
+  background-color: #503e32;
+}
+
+.hotel-stars {
+  color: #82b3d3;
+}
+
+.rating {
   color: #8b8b8b;
   background-color: #f2f2f2;
 }
