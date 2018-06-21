@@ -1,31 +1,34 @@
 body {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 26px;
-  color: #000000;
-  text-transform: uppercase;
   text-align: center;
-  
+  text-transform: uppercase;
+
+  color: #000;
   background-color: #f2f2f2;
 }
 
 .button {
   font-family: inherit;
-  font-size:21px;
+  font-size: 21px;
   font-weight: bold;
-  color: #ffffff;
+
+  /* Нужен ли этот блок вообще? Я его убрала, ничего не поменялось */
+  text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
-  text-align: center;
 
+  color: #fff;
   background-color: #82b3d3;
 }
 
 .button:hover {
-  color:#ffffff;
+  color: #fff;
   background-color: #669ec1;
 }
 
@@ -35,8 +38,9 @@ body {
 }
 
 a {
-  text-decoration: none;
-  color: #000000;
+text-decoration: none;
+
+color: #000;
 }
 
 a:hover {
@@ -44,29 +48,110 @@ a:hover {
 }
 
 a:active {
-  color: #dddddd;
+  color: #ddd;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .container {
-  background-color: #ffffff;
+  position: relative;
+  
+  width: 1200px;
+  margin: auto;
+  padding: 0 0;
+
+  background-color: #fff;
 }
 
-.main-navigation {
+.logo {
+  position: absolute;
+
+  top: 0px;
+  left: 536px;
+  
+  height: 70px;
+  width: 138px;
+  
+  margin-bottom: -35px;
+}
+
+.site-navigation {
   font-weight: bold;
-  background-color: #ffffff;
-}
 
-.main-navigation .site-navigation {
+  display: flex;
+  flex-direction: row;
+
+  height: 60px;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+
+  align-items: center;
 }
 
-.about-sedona .title {
+/*
+.site-navigation li:nth-child(1) {
+  padding-right: 75px;
+  padding-left: 70px;
+
+  text-align: left;
+}
+
+.site-navigation li:nth-child(2) {
+  padding-right: 190px;
+  padding-left: 75px;
+
+  text-align: left;
+}
+
+.site-navigation li:nth-child(3) {
+  padding-right: 75px;
+  padding-left: 190px;
+
+  text-align: right;
+}
+
+.site-navigation li:nth-child(4) {
+  padding-right: 70px;
+  padding-left: 75px;
+
+  text-align: right;
+}
+*/
+
+.features-promo {
+  display: flex;
+  flex-direction: column;
+
+  height: 220px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+
+.features-promo .title {
   font-size: 21px;
   font-weight: bold;
+
+  width: 440px;
 }
 
 .features-list {
   line-height: 21px;
+
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -75,28 +160,115 @@ a:active {
 }
 
 .feature-1 {
-  color: #ffffff;
+  display: flex;
+
+  height: 255px;
+
+  color: #fff;
   background-color: #81b3d2;
+
+  align-items: center;
+}
+
+.feature-1 .feature-content-1 {
+  width: 290px;
+  padding-right: 55px;
+  padding-left: 55px;
+}
+
+.feature-1 .feature-content-2 {
+  width: 310px;
+  padding-right: 45px;
+  padding-left: 45px;
+
+  order: 2;
+}
+
+.feature-2 {
+  display: flex;
+
+  height: 330px;
+  margin: 0;
+
+  align-items: center;
+}
+
+.feature-2 div:first-child {
+  width: 270px;
+  padding-right: 65px;
+  padding-left: 65px;
+}
+
+.feature-2 div:nth-child(2) {
+  width: 290px;
+  padding-right: 55px;
+  padding-left: 55px;
+}
+
+.feature-2 div:last-child {
+  width: 290px;
+  padding-right: 55px;
+  padding-left: 55px;
 }
 
 .feature-3 {
+  display: flex;
+
+  height: 255px;
+
   background-color: #f2f2f2;
+
+  align-items: center;
+}
+
+.feature-3 div:first-child {
+  width: 220px;
+  padding-right: 90px;
+  padding-left: 90px;
+}
+
+.feature-3 div:nth-child(2) {
+  width: 270px;
+  padding-right: 65px;
+  padding-left: 65px;
+}
+
+.feature-3 div:last-child {
+  width: 260px;
+  padding-right: 70px;
+  padding-left: 70px;
+}
+
+.form-intro {
+  display: flex;
+  flex-direction: column;
+
+  height: 300px;
+
+  justify-content: space-between;
+  align-items: center;
 }
 
 .form-intro .title {
   font-size: 30px;
-  line-height: 36px;
   font-weight: bold;
+  line-height: 36px;
 }
 
 .form-intro .description {
-  line-height: 24px;
   font-weight: normal;
+  line-height: 24px;
 }
 
 .form-intro .button {
-  color: #ffffff;
-  background-color: #766357;  
+  width: 575px;
+  height: 54px;
+
+  text-align: center;
+  vertical-align: middle;
+
+  color: #fff;
+  background-color: #766357;
 }
 
 .form-intro .button:hover {
@@ -109,7 +281,7 @@ a:active {
 }
 
 .form {
-  font-weight: bold;  
+  font-weight: bold;
 }
 
 .form fieldset {
@@ -118,18 +290,20 @@ a:active {
 
 .form legend {
   font-size: 21px;
-  
-  color: #ffffff;
-  background-color: #766357;  
+
+  color: #fff;
+  background-color: #766357;
 }
 
 .form .date,
 .form .number {
   font-weight: bold;
+
+  padding: 5px;
+
   text-transform: uppercase;
-  
+
   background-color: #f2f2f2;
-  padding:5px;
 }
 
 .form .date:hover,
@@ -139,7 +313,27 @@ a:active {
 
 .form .date:focus,
 .form .number:focus {
-  background-color: #ffffff;
+  background-color: #fff;
+}
+
+.footer-wrapper {
+  display: flex;
+
+  height: 120px;
+
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-list {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  justify-content: space-between;
 }
 
 .tag {
@@ -147,48 +341,50 @@ a:active {
   font-weight: bold;
 }
 
-.social-list {
-  list-style: none;
-}
-
-.copyright .button {
-  color: #000000;
-  background-color: #ffffff;
-}
-
 .copyright .button:hover {
-  color: #82b3d3;  
+  color: #82b3d3;
 }
 
 .copyright .button:active {
-  color: #dddddd;  
+  color: #ddd;
 }
 
 .site-navigation-current {
   color: #766357;
 }
 
-.filters {
-  color: #ffffff;
-  
+.filters .filter {
+  display: flex;
+  flex-direction: row;
+
+  height: 330px;
+  margin: 0 0;
+  padding-top: 30px;
+  padding-right: 70px;
+  padding-bottom: 30px;
+  padding-left: 70px;
+
+  color: #fff;
   background-color: #81b3d2;
-  background-image: url(/img/hotels_background.jpg);
+  background-image: url(../img/hotels_background.jpg);
+  background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .filter legend {
   font-size: 16px;
-  line-height: 21px;
   font-weight: bold;
+  line-height: 21px;
 }
 
 .filter fieldset {
   border: none;
 }
-  
+
 .filter-group {
+  height: 160px;
+
   text-align: left;
 }
 
@@ -197,12 +393,20 @@ a:active {
 }
 
 .filter .checkbox:disabled {
-  color:#6a6a6a;  
+  color: #6a6a6a;
 }
 
-.sort {
+.sort-form {
   font-size: 12px;
   line-height: 18px;
+
+  display: flex;
+  flex-direction: row;
+
+  padding-top: 30px;
+  padding-right: 70px;
+  padding-bottom: 30px;
+  padding-left: 70px;
 }
 
 .sort .found {
@@ -214,12 +418,19 @@ a:active {
   list-style: none;
 }
 
+.sort-list {
+  display: flex;
+  flex-direction: row;
+
+  list-style: none;
+}
+
 .sort-list-current {
   color: #82b3d3;
 }
 
 .sort-list .sort-item {
-  color: #dddddd;
+  color: #ddd;
   border-bottom: 1px dotted #82b3d3;
 }
 
@@ -228,7 +439,7 @@ a:active {
 }
 
 .sort-list .sort-item:active {
-  color: #000000;  
+  color: #000;
   border-bottom: none;
 }
 
@@ -238,15 +449,46 @@ a:active {
 }
 
 .sort-list .order {
-  color: #dddddd;
+  margin-left: auto;
+
+  color: #ddd;
 }
 
 .sort-list .order:hover {
-  color: #000000;
+  color: #000;
 }
 
 .sort-list .order:active {
   color: #82b3d3;
+}
+
+.hotels-list {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.hotels-item {
+  display: flex;
+  flex-direction: row;
+
+  height: 150px;
+  padding-top: 30px;
+  padding-right: 70px;
+  padding-bottom: 30px;
+  padding-left: 70px;
+}
+
+.hotel-description {
+  width: 260px;
+  margin-right: auto;
+  padding-left: 30px;
+
+  text-align: left;
 }
 
 .hotel-description h3 {
@@ -256,23 +498,24 @@ a:active {
 }
 
 .hotel-description h3:hover {
- color: #82b3d3; 
+  color: #82b3d3;
 }
 
 .hotel-description h3:active {
- color: #dddddd; 
+  color: #ddd;
 }
 
-.hotel-description .book-button {  
+.hotel-description .book-button {
   font-family: inherit;
-  font-size:21px;
+  font-size: 21px;
   font-weight: bold;
-  color: #ffffff;
+
+  text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
-  text-align: center;
-  
-  background-color: #766357;   
+
+  color: #fff;
+  background-color: #766357;
 }
 
 .hotel-description .book-button:hover {
@@ -292,26 +535,3 @@ a:active {
   color: #8b8b8b;
   background-color: #f2f2f2;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
