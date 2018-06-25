@@ -9,70 +9,38 @@
   </head>
 
   <body>
-  <div class="container">
-    <header class="main-header">
-      <div class="logo">
-        <a class="header-logo" hrtf="index.html">
-          <img src="../img/logo.png" width="138" height="70" alt="Главная">
-        </a>
-      </div>
-      <nav class="main-navigation">
-        <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="media.html">Фото и видео</a></li>
-          <li><a href="map.html">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="container">
+      <header class="main-header">
+        <div class="logo">
+          <img src="img/logo.png" width="138" height="70" alt="Главная">
+        </div>
+        <nav class="main-navigation">
+          <ul class="site-navigation">
+            <li><a href="info.html">Информация</a></li>
+            <li><a href="media.html">Фото и видео</a></li>
+            <li><a href="map.html">Карта штата</a></li>
+            <li><a class="hotels.html">Гостиницы</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main> 
+        <div class="intro">
+          <h1 class="visually-hidden">Поиск гостиниц в Седоне</h1>
+          <div class="intro-image">
+            <img src="img/intro-text.png" width="458" height="352" alt="Добро пожаловать в Седону">
+          </div>
+        </div>
       
-    <main>
-      <h1 class="visually-hidden">Поиск гостиниц в Седоне</h1>
-      <div class="intro">
-        <div class="intro-image">
-          <span class="intro=image">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="458" height="352" viewBox="0 0 458 352">
-              <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-            <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-               <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                  <rdf:Description rdf:about=""/>
-               </rdf:RDF>
-            </x:xmpmeta>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <?xpacket end="w"?></metadata>
-            <image id="intro" width="458" height="352" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcoAAAFgCAMAAAAMxclmAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAzFBMVEX///+Bs9J2Y1eBs9KBs9KBs9KBs9KBs9KBs9KBs9KBs9KBs9KBs9KBs9KBs9KBs9KBs9J2Y1d2Y1d2Y1d2Y1d2Y1d2Y1d2Y1d2Y1d2Y1d2Y1d2Y1d2Y1d2Y1d2Y1d2Y1d2Y1d2Y1d2Y1f///////////////////////////////////////////////////////////////////////////////////////////////////////////////////+Bs9J2Y1f///8AAADd0ofnAAAAQHRSTlMAAABEIhEzd2a73YiqVe6ZzN0zZqpEu4h3mREizO5VevTvwBBQgMDg0JBwQDAgsPCgYCKZ3bsRd0SIM+7MVWaqysJWHQAAAAFiS0dEQ2fQDWIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBhgDACJak2VEAAAh0UlEQVR42u19h3bbOLC21k7W65RN3GS5KPe/192OLVlUs2rE93+on+gAMSgUZVFaz3f2bEwSAMH5MIPBoKhW2wzsMnz6i+Azv/pMrz7xK/L3LoC/1X2WXcffRtLPgQdgMfpN8P1Vy27D8Idhjwpvj1/9Y1yRv/8A2Ff39/JEfsml/ep/wC++6WV818sG31+17DYMIJV7Jan8+18r8Q/vA3Ghae9fP5DKYjC4+GbIfXkqvwGpd30PxN//aIV80ctGKsMwuNjXSCpDJZT6q++BqbtMgf/oZSOVYRhcCPP37ztQuR9RDH8xxVeksiAMLqSUDB1dI5V/vlv2FamMhWbl/tqVUvq7KiqlhZX2FamMhS5oReWug8of+XGll0qWGqDSeiBfLC3snry153x/1bLbMHzRBJ0T374mXZiyAJWG1d73PVCq9jcv4idIpfmeqmW3YdgPUrm/Vip5LOHTH7MuSGUYOl/7Unz7lVH5JW9fkcpYbBqV3MKqqiCVsQD4IqiOSvrsc/4GUhmGxpcuv88rpvLnj++RVP4kj/5BKotD42tXk9/uCqnc//r9s5Nji8o/ZFJLj9UilZHQ+Pquye/76qiMsbx/TOo+566R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"/>
-            </svg>
-          </span>
-            </div>
-            <h2 class="visually-hidden">Причины поехать в Седону</h2>
-            <div class="intro-promo">
-              <p class="title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-              <p class="description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон.</p>
-            </div>
-           </div>
-          <section class="features">
-            <ul class="features-list">
-              <li class="feature-1 feature-1-first">
+        <section class="features">
+          <h2 class="visually-hidden">Причины поехать в Седону</h2>
+          <div class="features-intro">
+            <p class="title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+            <p class="description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон.</p>
+          </div>
+          <ul class="feature-list blue">
+            <li class="feature-item">
+              <div class="feature-wrapper">
                 <div class="feature-content">
                   <h3>Настоящий городок</h3>
                   <span>— №1 —</span>
@@ -81,54 +49,68 @@
                 <div class="feature-image">
                   <img src="img/Town.jpg" width="800" height="auto" alt="Городской пейзаж">
                 </div>
-              </li>
-              <li class="feature-2">
-                <div class="feature-content">
-                  <span class="housing"><svg xmlns="http://www.w3.org/2000/svg" width="75" height="72" viewBox="0 0 75 72"><g fill="#81B3D2"><path d="M29.656 65.033h16V41.21h-16v23.823zm2.937-20.899h10.125V62.11H32.593V44.134z"/><path d="M72.771 39.253l2.076-2.068-9.908-9.865V0H51.127v13.567L37.5 0 .152 37.185l2.077 2.068 7.832-7.795v37.618H6.124V72h63.875v-2.924H64.94V31.458l7.831 7.795zM62.002 69.076H12.999V28.534L37.5 4.149l24.502 24.385v40.542zm0-44.682l-7.938-7.902V2.924h7.938v21.47z"/><path d="M29.906 27.08c0 4.261 3.47 7.713 7.75 7.713 4.279 0 7.75-3.452 7.75-7.713 0-4.259-3.471-7.713-7.75-7.713-4.281 0-7.75 3.454-7.75 7.713zm7.75-4.945c2.744 0 4.969 2.214 4.969 4.945 0 2.732-2.225 4.948-4.969 4.948-2.746 0-4.97-2.216-4.97-4.948 0-2.731 2.225-4.945 4.97-4.945zM17.061 41.21h3v3.919h-3zM22.999 41.21h3v3.919h-3zM17.061 47.182h3v3.919h-3zM22.999 47.182h3v3.919h-3zM48.998 41.21h3v3.919h-3zM54.936 41.21h3v3.919h-3zM48.998 47.182h3v3.919h-3zM54.936 47.182h3v3.919h-3z"/></g></svg>
-                </span>
-              <h3>Жилье</h3>
-              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-            </div>
-            <div class="feature-content">
-              <span class="food"><svg xmlns="http://www.w3.org/2000/svg" width="74" height="70" viewBox="0 0 74 70"><g fill="#81B3D2"><path d="M69.854 46.71H4.051c-2.274 0-4.135 1.94-4.135 4.313v3.504c0 2.372 1.861 4.313 4.135 4.313h.93v1.053c0 5.536 4.341 10.065 9.648 10.065h44.646c5.306 0 9.648-4.529 9.648-10.065V58.84h.93c2.274 0 4.135-1.941 4.135-4.313v-3.504c0-2.373-1.86-4.313-4.134-4.313zm-3.848 13.184c0 3.871-3.019 7.021-6.73 7.021H14.629c-3.711 0-6.731-3.15-6.731-7.021v-1.053h58.107v1.053zm5.065-5.367c0 .688-.558 1.271-1.218 1.271H4.051c-.66 0-1.217-.582-1.217-1.271v-3.504c0-.688.558-1.271 1.217-1.271h65.802c.66 0 1.218.582 1.218 1.271v3.504zM15.634 38.406l5.323 4.059 5.326-4.059 5.328 4.059 5.328-4.059 5.328 4.059 5.329-4.059 5.327 4.059 5.33-4.06 5.336 4.059 6.194-4.712-1.72-2.459-4.474 3.403-5.336-4.057-5.33 4.056-5.327-4.057-5.329 4.057-5.328-4.057-5.328 4.057-5.328-4.057-5.325 4.057-5.323-4.057-5.327 4.057-4.467-3.401-1.721 2.457 6.188 4.714zM7.978 31.544H68.855c.041-.619.069-1.241.069-1.87 0-.394-.016-.783-.032-1.173C68.227 12.657 54.186 0 36.952 0 19.719 0 5.677 12.657 5.013 28.501c-.017.39-.032.78-.032 1.173 0 .629.028 1.251.07 1.87h2.927zM36.952 3.043c15.591 0 28.35 11.316 29.021 25.458H7.931c.673-14.142 13.43-25.458 29.021-25.458z"/><ellipse cx="36.952" cy="15.26" rx="1.945" ry="2.03"/><ellipse cx="29.172" cy="10.23" rx="1.946" ry="2.03"/><ellipse cx="44.732" cy="10.23" rx="1.946" ry="2.03"/></g></svg></span>
-              <h3>Еда</h3>
-              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-            </div>
-            <div class="feature-content">
-              <span class="souvenirs"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="76" viewBox="0 0 64 76"><path fill-rule="evenodd" clip-rule="evenodd" fill="#81B3D2" d="M61.097 22.501H36.312C50.125 15.602 51.229 11.25 50.72 8.816c-1.162-3.963-5.692-7.023-10.002-5.407-5.569 2.089-7.137 10.388-8.644 16.387-1.924-6.07-3.784-13.814-8.136-17.737C22.677.921 20.843-.205 18.175.031c-4.026.356-9.802 5.382-7.458 10.981 2.251 5.378 9.687 8.777 14.578 11.489H2.879A2.882 2.882 0 0 0 0 25.37v11.322a2.882 2.882 0 0 0 2.879 2.869h.274V76h57.841V39.561h.103a2.882 2.882 0 0 0 2.88-2.869V25.37a2.882 2.882 0 0 0-2.88-2.869zM42.413 5.944c2.103-.31 4.982 1.299 5.255 3.209.393 2.756-3.4 5.255-5.086 6.421-2.523 1.744-4.928 2.643-7.287 4.055.884-3.69 2.549-13.011 7.118-13.685zm-22.882 9.968c-2.225-1.485-6.544-4.431-6.44-7.771.112-3.595 5.743-6.57 8.814-3.886 3.856 3.371 5.713 11.105 7.119 16.557-3.249-1.539-6.328-2.788-9.493-4.9zm5.972 57.114H6.136V39.561h19.368v33.465zm0-36.502H3.046V25.538h22.457v10.986zm10.157 0v36.503h-7.174V25.538h7.174v10.986zm22.351 36.502H38.644V39.561h19.367v33.465zm2.92-36.502H38.644V25.538h22.287v10.986z"/></svg></span>
-              <h3>Сувениры</h3>
-              <p>Не только китайского, но и местного производства!</p>
-            </div> 
-          </li>
-          <li class="feature-1">
-            <div class="feature-content feature-1-second">
-              <h3>Там есть мост дьявола</h3>
-              <span>- №2 -</span>
-              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-            </div>
-            <div class="feature-image">
-              <img src="img/Canyon.jpg" width="800" height="260" alt="Каньон">
-            </div>
-          </li>
-          <li class="feature-3">
-            <div class="feature-content">
-              <h3>Небольшая площадь</h3>
-              <span>- №3 -</span>
-              <p>Все достопримечательности находятся очень близко</p>
-            </div>
-            <div class="feature-content">
-              <h3>Красивая дорога</h3>
-              <span>- №4 -</span>
-              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </div>
-            <div class="feature-content">
-              <h3>Мало туристов</h3>
-              <span>- №5 -</span>
-              <p>Большинство едет в Гранд-Каньон и толпится там</p>
-            </div>
-          </li>
-        </ul>
-      </section>
+              </div>
+            </li>
+            <li class="feature-item two">
+              <div class="feature-wrapper">
+                <div class="feature-content two">
+                  <h3>Там есть мост дьявола</h3>
+                  <span>- №2 -</span>
+                  <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                </div>
+                <div class="feature-image">
+                  <img src="img/Canyon.jpg" width="800" height="260" alt="Каньон">
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="feature-list white">
+            <li class="feature-item">
+              <div class="feature-content">
+                <span class="housing"><svg xmlns="http://www.w3.org/2000/svg" width="75" height="72" viewBox="0 0 75 72"><g fill="#81B3D2"><path d="M29.656 65.033h16V41.21h-16v23.823zm2.937-20.899h10.125V62.11H32.593V44.134z"/><path d="M72.771 39.253l2.076-2.068-9.908-9.865V0H51.127v13.567L37.5 0 .152 37.185l2.077 2.068 7.832-7.795v37.618H6.124V72h63.875v-2.924H64.94V31.458l7.831 7.795zM62.002 69.076H12.999V28.534L37.5 4.149l24.502 24.385v40.542zm0-44.682l-7.938-7.902V2.924h7.938v21.47z"/><path d="M29.906 27.08c0 4.261 3.47 7.713 7.75 7.713 4.279 0 7.75-3.452 7.75-7.713 0-4.259-3.471-7.713-7.75-7.713-4.281 0-7.75 3.454-7.75 7.713zm7.75-4.945c2.744 0 4.969 2.214 4.969 4.945 0 2.732-2.225 4.948-4.969 4.948-2.746 0-4.97-2.216-4.97-4.948 0-2.731 2.225-4.945 4.97-4.945zM17.061 41.21h3v3.919h-3zM22.999 41.21h3v3.919h-3zM17.061 47.182h3v3.919h-3zM22.999 47.182h3v3.919h-3zM48.998 41.21h3v3.919h-3zM54.936 41.21h3v3.919h-3zM48.998 47.182h3v3.919h-3zM54.936 47.182h3v3.919h-3z"/></g></svg></span>
+                <h3>Жилье</h3>
+                <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </div>
+            </li>
+            <li class="feature-item">
+              <div class="feature-content">
+                <span class="food"><svg xmlns="http://www.w3.org/2000/svg" width="74" height="70" viewBox="0 0 74 70"><g fill="#81B3D2"><path d="M69.854 46.71H4.051c-2.274 0-4.135 1.94-4.135 4.313v3.504c0 2.372 1.861 4.313 4.135 4.313h.93v1.053c0 5.536 4.341 10.065 9.648 10.065h44.646c5.306 0 9.648-4.529 9.648-10.065V58.84h.93c2.274 0 4.135-1.941 4.135-4.313v-3.504c0-2.373-1.86-4.313-4.134-4.313zm-3.848 13.184c0 3.871-3.019 7.021-6.73 7.021H14.629c-3.711 0-6.731-3.15-6.731-7.021v-1.053h58.107v1.053zm5.065-5.367c0 .688-.558 1.271-1.218 1.271H4.051c-.66 0-1.217-.582-1.217-1.271v-3.504c0-.688.558-1.271 1.217-1.271h65.802c.66 0 1.218.582 1.218 1.271v3.504zM15.634 38.406l5.323 4.059 5.326-4.059 5.328 4.059 5.328-4.059 5.328 4.059 5.329-4.059 5.327 4.059 5.33-4.06 5.336 4.059 6.194-4.712-1.72-2.459-4.474 3.403-5.336-4.057-5.33 4.056-5.327-4.057-5.329 4.057-5.328-4.057-5.328 4.057-5.328-4.057-5.325 4.057-5.323-4.057-5.327 4.057-4.467-3.401-1.721 2.457 6.188 4.714zM7.978 31.544H68.855c.041-.619.069-1.241.069-1.87 0-.394-.016-.783-.032-1.173C68.227 12.657 54.186 0 36.952 0 19.719 0 5.677 12.657 5.013 28.501c-.017.39-.032.78-.032 1.173 0 .629.028 1.251.07 1.87h2.927zM36.952 3.043c15.591 0 28.35 11.316 29.021 25.458H7.931c.673-14.142 13.43-25.458 29.021-25.458z"/><ellipse cx="36.952" cy="15.26" rx="1.945" ry="2.03"/><ellipse cx="29.172" cy="10.23" rx="1.946" ry="2.03"/><ellipse cx="44.732" cy="10.23" rx="1.946" ry="2.03"/></g></svg></span>
+                <h3>Еда</h3>
+                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </div>
+            </li>
+            <li class="feature-item">
+              <div class="feature-content">
+                <span class="souvenirs"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="76" viewBox="0 0 64 76"><path fill-rule="evenodd" clip-rule="evenodd" fill="#81B3D2" d="M61.097 22.501H36.312C50.125 15.602 51.229 11.25 50.72 8.816c-1.162-3.963-5.692-7.023-10.002-5.407-5.569 2.089-7.137 10.388-8.644 16.387-1.924-6.07-3.784-13.814-8.136-17.737C22.677.921 20.843-.205 18.175.031c-4.026.356-9.802 5.382-7.458 10.981 2.251 5.378 9.687 8.777 14.578 11.489H2.879A2.882 2.882 0 0 0 0 25.37v11.322a2.882 2.882 0 0 0 2.879 2.869h.274V76h57.841V39.561h.103a2.882 2.882 0 0 0 2.88-2.869V25.37a2.882 2.882 0 0 0-2.88-2.869zM42.413 5.944c2.103-.31 4.982 1.299 5.255 3.209.393 2.756-3.4 5.255-5.086 6.421-2.523 1.744-4.928 2.643-7.287 4.055.884-3.69 2.549-13.011 7.118-13.685zm-22.882 9.968c-2.225-1.485-6.544-4.431-6.44-7.771.112-3.595 5.743-6.57 8.814-3.886 3.856 3.371 5.713 11.105 7.119 16.557-3.249-1.539-6.328-2.788-9.493-4.9zm5.972 57.114H6.136V39.561h19.368v33.465zm0-36.502H3.046V25.538h22.457v10.986zm10.157 0v36.503h-7.174V25.538h7.174v10.986zm22.351 36.502H38.644V39.561h19.367v33.465zm2.92-36.502H38.644V25.538h22.287v10.986z"/></svg></span>
+                <h3>Сувениры</h3>
+                <p>Не только китайского, но и местного производства!</p>
+              </div>
+            </li>
+          </ul>
+          <ul class="feature-list brown">
+            <li class="feature-item">
+              <div class="feature-content">
+                <h3>Небольшая площадь</h3>
+                <span>- №3 -</span>
+                <p>Все достопримечательности находятся очень близко</p>
+              </div>
+            </li>
+            <li class="feature-item">
+              <div class="feature-content">
+                <h3>Красивая дорога</h3>
+                <span>- №4 -</span>
+                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </div>
+            </li>
+            <li class="feature-item">
+              <div class="feature-content">
+                <h3>Мало туристов</h3>
+                <span>- №5 -</span>
+                <p>Большинство едет в Гранд-Каньон и толпится там</p>
+              </div>
+            </li>
+          </ul>
+        </section>
 
         <section class="search-form">
           <h2 class="visually-hidden">Поиск гостиницы</h2>
@@ -137,6 +119,7 @@
             <p class="description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне.</p>
             <a class="button" href="#">Поиск гостиницы в Седоне</a>
           </div>
+        </section>
 
         <!--  <form class="form" action="https://echo.htmlacademy.ru" method="post">     <fieldset>
             <legend>Поиск гостиницы в Седоне</legend>
@@ -164,28 +147,33 @@
             </fieldset>
           </form> -->
           
-          <div class="map">
+        <div class="map">
             <img src="img/map.png" width="1200" height="593"  alt="Карта Седоны">
-          </div>
-        </section>
+        </div>
       </main>
 
       <footer>
         <div class="footer-wrapper">
           <p class="tag">#visitsedona</p>
-          <div class="footer-social">
-            <ul class="social-list">
-              <li><a class="button" href="#"><span class="visually-hidden">Твиттер</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15"><path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/></svg></a></li>
-              <li><a class="button" href="#"><span class="visually-hidden">Facebook</span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg></a></li>
-              <li><a class="button" href="#"><span class="visually-hidden">YouTube</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16"><path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg></a></li>
-            </ul>
-          </div>
-          <p class="copyright">
+          <ul class="social-list">
+            <li>
+              <a class="button" href="#"><span class="visually-hidden">Твиттер</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15"><path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/></svg></a>
+            </li>
+            <li>
+              <a class="button" href="#"><span class="visually-hidden">Facebook</span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a class="button" href="#"><span class="visually-hidden">YouTube</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16"><path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg>
+              </a>
+            </li>
+          </ul>
+          <div class="copyright">
             <span>Website by</span>
             <a class="button" href="https://htmlacademy.ru"><span class="visually-hidden">HTML Academy</span><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.08 36.85"><title>logo-htmlacademy-small1</title><path d="M44.61,26.88a2,2,0,0,0,.55-0.1v1.33a3.25,3.25,0,0,1-1.18.21,1.67,1.67,0,0,1-1.67-1,4.84,4.84,0,0,1-3.14,1.08c-1.51,0-2.91-.83-2.91-2.55,0-2.13,2-2.79,3.71-2.79a11.08,11.08,0,0,1,2.17.25v-0.3c0-1-.76-1.77-2.19-1.77a7.42,7.42,0,0,0-3,.64v-1.7a10.21,10.21,0,0,1,3.19-.55c2.36,0,3.81,1.12,3.81,3.65v3a0.54,0.54,0,0,0,.49.59h0.17Zm-6.44-1.13A1.35,1.35,0,0,0,39.63,27h0.11a3.39,3.39,0,0,0,2.41-1V24.58a9.72,9.72,0,0,0-1.81-.21c-1,0-2.16.33-2.16,1.38h0Zm12.36-6.11a5,5,0,0,1,2.57.64V22a4.08,4.08,0,0,0-2.3-.7,2.75,2.75,0,1,0,0,5.49,5,5,0,0,0,2.43-.64v1.71a6.27,6.27,0,0,1-2.76.57A4.21,4.21,0,0,1,46,24.51q0-.21,0-0.41a4.32,4.32,0,0,1,4.18-4.46h0.38Zm12.17,7.24a2,2,0,0,0,.55-0.1v1.33a3.25,3.25,0,0,1-1.18.21,1.67,1.67,0,0,1-1.67-1,4.84,4.84,0,0,1-3.14,1.08c-1.51,0-2.91-.83-2.91-2.55,0-2.13,2-2.79,3.71-2.79a11.08,11.08,0,0,1,2.17.25v-0.3c0-1-.76-1.77-2.19-1.77a7.42,7.42,0,0,0-3,.64v-1.7a10.21,10.21,0,0,1,3.19-.55c2.36,0,3.81,1.12,3.81,3.65v3a0.54,0.54,0,0,0,.49.59h0.17Zm-6.44-1.13A1.35,1.35,0,0,0,57.73,27h0.11a3.39,3.39,0,0,0,2.41-1V24.58a9.72,9.72,0,0,0-1.81-.21c-1.06,0-2.16.33-2.16,1.38h0ZM73,16V28.2H71.35V26.88a3.88,3.88,0,0,1-3.19,1.54,4.4,4.4,0,0,1,0-8.78,3.81,3.81,0,0,1,3,1.3V16H73Zm-4.53,5.22a2.76,2.76,0,1,0,0,5.52A2.86,2.86,0,0,0,71.15,25V23A2.91,2.91,0,0,0,68.49,21.27ZM79,19.64c3.31,0,4.46,2.68,3.92,5.09H76.7c0.21,1.5,1.67,2.11,3.19,2.11a6.11,6.11,0,0,0,2.64-.59v1.6a7.14,7.14,0,0,1-3,.57C77,28.42,74.78,27,74.78,24a4.18,4.18,0,0,1,4-4.39H79Zm0.09,1.54a2.28,2.28,0,0,0-2.44,2.1v0.06H81.3A2,2,0,0,0,79.13,21.18Zm5.73,7V19.87h1.65v1a3.81,3.81,0,0,1,2.78-1.27A2.86,2.86,0,0,1,91.89,21a4.12,4.12,0,0,1,2.91-1.33A3.06,3.06,0,0,1,98,23V28.2h-1.9V23.05a1.59,1.59,0,0,0-1.42-1.75H94.42a2.8,2.8,0,0,0-2.07,1.12V28.2h-1.9V23.05A1.59,1.59,0,0,0,89,21.31H88.8a3,3,0,0,0-2.21,1.29v5.63H84.86Zm21.31-8.33h1.9l-3.91,9.46c-0.9,2.17-2.09,2.86-3.35,2.86a4.76,4.76,0,0,1-1.1-.14V30.46a2.86,2.86,0,0,0,.85.12c0.9,0,1.58-.64,2.07-1.9l0.17-.42-4-8.4h2l2.86,6.29ZM38.73,1.46V6.22a3.81,3.81,0,0,1,2.7-1.14,3.25,3.25,0,0,1,3.44,3.4v5.15H43V8.72a1.81,1.81,0,0,0-1.61-2h-0.3a2.93,2.93,0,0,0-2.32,1.39v5.52h-1.9V1.46h1.9ZM49.94,2.31v3h3V6.91h-3v3.81c0,1.1.5,1.46,1.58,1.46a4.49,4.49,0,0,0,1.69-.33v1.6A6.8,6.8,0,0,1,51,13.8a2.55,2.55,0,0,1-2.86-2.74V6.89H46.58V5.26h1.5V2.74Zm5.4,11.31V5.28H57v1A3.81,3.81,0,0,1,59.77,5a2.86,2.86,0,0,1,2.6,1.33A4.12,4.12,0,0,1,65.28,5,3.06,3.06,0,0,1,68.44,8.4v5.21h-1.9V8.46a1.59,1.59,0,0,0-1.42-1.75H64.89a2.8,2.8,0,0,0-2.07,1.12v5.78h-1.9V8.46A1.59,1.59,0,0,0,59.5,6.71H59.27A3,3,0,0,0,57.06,8v5.63H55.34ZM71.17,1.45H73V13.6H71.17V1.45ZM14.71,0H14.55L0,1.54V28.21l14.55,8.66,14.55-8.66V1.54Zm12.5,27.1L14.55,34.64,1.9,27.12V16.18l12.59,7.5V25L5.86,19.9v1.31l8.68,5.21v1.39L5.87,22.65V24l8.68,5.21,8.75-5.24V18.31L27.2,16V27.12Zm0-12.53-3.48,2-1.6,1L14.51,13v1.31L21,18.23H21l-0.14.09-1,.54-5.37-3.2V17l4.24,2.52-1,.67-3.2-1.9v1.31l2.1,1.24L14.5,22.1,2,14.65,14.51,7.11Zm0-1.32L14.49,5.76,1.91,13.25v-10L14.56,1.92,27.21,3.25v10h0Z" transform="translate(0 -0.02)" fill="#231f20"/></svg></a>
-          </p>
-        </div>  
+          </div>
+        </div>
       </footer>
     </div>
-  </body>    
+  </body>
   
