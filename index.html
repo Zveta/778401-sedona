@@ -39,7 +39,7 @@
             <p class="description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон.</p>
           </div>
           <ul class="feature-list blue">
-            <li class="feature-item">
+            <li class="feature-item first">
               <div class="feature-wrapper">
                 <div class="feature-content">
                   <h3>Настоящий городок</h3>
@@ -47,11 +47,11 @@
                   <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
                 </div>
                 <div class="feature-image">
-                  <img src="img/Town.jpg" width="800" height="auto" alt="Городской пейзаж">
+                  <img src="img/Town.jpg" width="800" height="401" alt="Городской пейзаж">
                 </div>
               </div>
             </li>
-            <li class="feature-item two">
+            <li class="feature-item reason-two">
               <div class="feature-wrapper">
                 <div class="feature-content two">
                   <h3>Там есть мост дьявола</h3>
@@ -59,12 +59,12 @@
                   <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                 </div>
                 <div class="feature-image">
-                  <img src="img/Canyon.jpg" width="800" height="260" alt="Каньон">
+                  <img src="img/Canyon.jpg" width="800" height="400" alt="Каньон">
                 </div>
               </div>
             </li>
           </ul>
-          <ul class="feature-list white">
+          <ul class="feature-list">
             <li class="feature-item">
               <div class="feature-content">
                 <span class="housing"><svg xmlns="http://www.w3.org/2000/svg" width="75" height="72" viewBox="0 0 75 72"><g fill="#81B3D2"><path d="M29.656 65.033h16V41.21h-16v23.823zm2.937-20.899h10.125V62.11H32.593V44.134z"/><path d="M72.771 39.253l2.076-2.068-9.908-9.865V0H51.127v13.567L37.5 0 .152 37.185l2.077 2.068 7.832-7.795v37.618H6.124V72h63.875v-2.924H64.94V31.458l7.831 7.795zM62.002 69.076H12.999V28.534L37.5 4.149l24.502 24.385v40.542zm0-44.682l-7.938-7.902V2.924h7.938v21.47z"/><path d="M29.906 27.08c0 4.261 3.47 7.713 7.75 7.713 4.279 0 7.75-3.452 7.75-7.713 0-4.259-3.471-7.713-7.75-7.713-4.281 0-7.75 3.454-7.75 7.713zm7.75-4.945c2.744 0 4.969 2.214 4.969 4.945 0 2.732-2.225 4.948-4.969 4.948-2.746 0-4.97-2.216-4.97-4.948 0-2.731 2.225-4.945 4.97-4.945zM17.061 41.21h3v3.919h-3zM22.999 41.21h3v3.919h-3zM17.061 47.182h3v3.919h-3zM22.999 47.182h3v3.919h-3zM48.998 41.21h3v3.919h-3zM54.936 41.21h3v3.919h-3zM48.998 47.182h3v3.919h-3zM54.936 47.182h3v3.919h-3z"/></g></svg></span>
@@ -117,43 +117,16 @@
           <div class="form-intro">
             <p class="title">Заинтересовались?</p>
             <p class="description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне.</p>
-            <a class="button" href="#">Поиск гостиницы в Седоне</a>
+            <button type="button" class="button">Поиск гостиницы в Седоне</button>
           </div>
         </section>
-
-        <!--  <form class="form" action="https://echo.htmlacademy.ru" method="post">     <fieldset>
-            <legend>Поиск гостиницы в Седоне</legend>
-              <div class="form-field">
-                <label for="check-in">Дата заезда</label>
-                <input type="text" class="date" id="check-in" name="check-in" value="30 апреля 2018">
-              </div>    
-              <div class="form-field">
-                <label for="check-out">Дата выезда</label>
-                <input type="text" class="date" id="check-out" name="check-out" value="4 июля 2018">
-              </div>
-              <div class="form-field">
-                <label for="adults-number">Взрослые</label>
-                <b>+</b>
-                <input type="number" class="number" id="adults-number" name="adults-number" value="2">
-                <b>-</b>
-              </div>
-              <div class="form-field">
-                <label for="children-number">Дети</label>
-                <b>+</b>
-                <input type="number" class="number" id="children-number" name="children-number" value="0">
-                <b>-</b>
-              </div>
-              <button class="button" type="submit">Найти</button>
-            </fieldset>
-          </form> -->
-          
         <div class="map">
-            <img src="img/map.png" width="1200" height="593"  alt="Карта Седоны">
+          <img src="img/map.png" width="1200" height="593"  alt="Карта Седоны">
         </div>
       </main>
 
       <footer>
-        <div class="footer-wrapper">
+        <div class="footer-wrapper index-page">
           <p class="tag">#visitsedona</p>
           <ul class="social-list">
             <li>
@@ -174,6 +147,41 @@
           </div>
         </div>
       </footer>
+      
+      <section class="modal">
+        <h2 class="visually-hidden">Форма поиска отелей</h2>
+        <form class="form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="date-field">
+            <label for="check-in">Дата заезда</label>
+            <input type="text" class="date" id="check-in" name="check-in" value="30 апреля 2018">
+            <button type="button" class="calendar-icon"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg></button>
+          </div>    
+          <div class="date-field">
+            <label for="check-out">Дата выезда</label>
+            <input type="text" class="date" id="check-out" name="check-out" value="4 июля 2018">
+            <button type="button" class="calendar-icon"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg></button>
+          </div>
+          <div class="number-wrapper">
+            <div class="number-field">
+              <label for="adults-number">Взрослые</label>
+              <div class="form-buttons-wrapper">
+                <input type="button" class="minus-button" value="-">
+                <input type="text" class="number" id="adults-number" name="adults-number" value="2">
+                <input type="button" class="plus-button" value="+">
+              </div>
+            </div>
+            <div class="number-field">
+              <label for="children-number">Дети</label>
+              <div class="form-buttons-wrapper">
+                <input type="button" class="minus-button" value="-">
+                <input type="text" class="number" id="children-number" name="children-number" value="2">
+                <input type="button" class="plus-button" value="+">
+              </div>
+            </div>
+          </div>
+          <button class="button" type="submit">Найти</button>
+        </form>
+      </section>
     </div>
   </body>
-  
+</html>

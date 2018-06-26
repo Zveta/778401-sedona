@@ -84,6 +84,7 @@ a:active {
   padding: 0;
 
   background-color: #ffffff;
+  box-shadow: 0 0 35px #a9a9a9;
 }
 
 .logo {
@@ -97,7 +98,7 @@ a:active {
   
   margin-bottom: -35px;
   
-  order:2;
+  z-index:1;
 }
 
 .site-navigation {
@@ -142,7 +143,6 @@ a:active {
 }
 
 .intro {
-  position: relative;
   background-image:
       url("../img/intro-block.png"),
       url("../img/intro_image.jpg");
@@ -182,6 +182,13 @@ a:active {
   margin-bottom: 50px;
 }
 
+.features {
+  display: flex;
+  flex-direction: column;
+  
+  margin: 0;
+}
+
 .feature-list {
   margin: 0;
   padding: 0;
@@ -192,28 +199,27 @@ a:active {
   list-style: none;
 }
 
+.feature-list.blue {
+  display: flex;
+  flex-direction: column;
+  
+  list-style: none;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
 .feature-wrapper {
   margin: 0;
   padding: 0;
     
   display: flex;
   flex-direction: row;
-  
-  align-items: center;
+  flex-shrink: 1;
 }
 
-
-/*.feature-item {
-  flex-direction: column;
-  justify-content: space-between;
-  
-  width: 400px;
-  
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 52px;
-  padding-bottom: 62px;
-}*/
+.feature-content.two {
+  order: 1; 
+}
 
 .feature-content {  
   margin: 0;
@@ -246,82 +252,6 @@ a:active {
 .feature-list.brown {
   background-color: #eeeeee;
 }
-
-.feature-list.blue {
-  color: #ffffff;
-  background-color: #81b3d2;
-}
-
-/*
-.features-list {
-  margin: 0;
-  padding: 0;
-  
-  line-height: 21px;
-  list-style: none;
-}
-
-.feature-1 {
-  margin: 0;
-  padding: 0;
-    
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  
-  color: #fff;
-  background-color: #81b3d2;
-}
-
-.feature-2,
-.feature-3 {
-  display: flex;
-  flex-direction: row;
-
-  margin: 0;
-
-  align-items: center;
-}
-
-.feature-content {  
-  flex-direction: column;
-  justify-content: space-between;
-  
-  width: 400px;
-  
-  margin: 0;
-  padding-left: 45px;
-  padding-right: 45px;
-  padding-top: 52px;
-  padding-bottom: 62px;
-}
-
-.features-content h3 {
-  margin: 0;
-  width: 165px;
-  
-  font-size: 21px;
-}
-
-.feature-image {
-  height: 260px;
-  margin: 0;
-}
-
-.feature-image img {
-  width: 800px;
-  height: 260px;
-}
-
-.feature-1-second {
-  order: 2;
-}
-
-.feature-3 {
-  background-color: #f2f2f2;
-}
-
-*/
 
 .form-intro {
   margin: 0;
@@ -377,43 +307,185 @@ a:active {
 }
 
 
+.modal {
+  position: fixed;
+  
+  top: 220px;
+  left: 557px;
+  
+  font-weight: bold;
+  
+  background-color: #ffffff;
+}
+
 .form {
-  font-weight: bold;
+  margin: 0;
+  width: 460px;
+  padding: 55px;
+  text-align: left;
+  
+  display: flex;
+  flex-direction: column;
+  
+  box-shadow: 0 0 20px #a9a9a9;
 }
 
-.form fieldset {
-  border: none;
+.date-field {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px; 
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.form legend {
-  font-size: 21px;
-
-  color: #fff;
-  background-color: #766357;
+.date-field label {
+  margin-right: auto;  
 }
 
-.form .date,
-.form .number {
-  font-weight: bold;
-
-  padding: 5px;
-
+.date-field input {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 9px;
+  padding-right: 9px;
+  
+  box-sizing: border-box;
+  width: 345px;
+  
+  font: inherit;
   text-transform: uppercase;
 
   background-color: #f2f2f2;
+  border: none;
 }
 
-.form .date:hover,
-.form .number:hover {
-  background-color: #ebebeb;
+.calendar-icon {
+  position: absolute;
+  margin: 0;
+  
+  top: 10px;
+  left: 420px;
+  
+  width: 23px;
+  height: 23px;
+  
+  border: none;
+  background-color: transparent;
 }
 
-.form .date:focus,
-.form .number:focus {
-  background-color: #fff;
+.calendar-icon path {
+  fill: #a9a9a9;
 }
+
+.number-wrapper {
+  margin: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.number-field {
+  width: 230px;
+  
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-buttons-wrapper {
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+}
+
+.form-buttons-wrapper input {
+  margin: 0;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 9px;
+  padding-right: 9px;
+  
+  box-sizing: border-box;
+  width: 39px;
+  
+  font: inherit;
+  text-align: center;
+
+  background-color: #f2f2f2;
+  border: none;  
+}
+
+.form-buttons-wrapper:first-child {
+  margin-right:50px;
+}
+
+form .button {
+  display: inline-block;
+  
+  margin:0;
+  margin-top: 55px;
+  
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 195px;
+  padding-right: 195px;
+}
+
+/*
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: -34px;
+  
+  width: 22px;
+  height: 22px;
+
+  font-size: 0;
+
+  border: 0;
+
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+  top: 10px;
+  left: 2px;
+
+  width: 19px;
+  height: 3px;
+
+  background-color: #d0d0d0;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+*/
 
 .footer-wrapper {
+  width:100%;
+  
   margin: 0;
   min-height: 120px;
   
@@ -423,6 +495,26 @@ a:active {
   background-color: #ffffff;
   background-position: top center;
   background-repeat: no-repeat;
+}
+
+.footer-wrapper.index-page {
+  position:absolute;
+  bottom: 0;
+  
+  width:100%;
+  
+  z-index: 2;
+  
+  margin: 0;
+  min-height: 120px;
+  
+  display: flex;
+  justify-content: space-around;
+  
+  background-color: #ffffff;
+  background-position: top center;
+  background-repeat: no-repeat;
+  opacity: 0.8;
 }
 
 .tag {
@@ -539,6 +631,10 @@ a:active {
 .filter-group:last-child {
   margin-right: 0;
   margin-left: auto;
+  width: 330px;
+
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 .filter fieldset {
@@ -549,6 +645,10 @@ a:active {
   font-size: 16px;
   font-weight: bold;
   line-height: 21px;
+}
+
+.legend-range {
+  margin-bottom: 9px;
 }
 
 .filter-group ul {
@@ -607,22 +707,6 @@ a:active {
 
 .filter .checkbox:disabled {
   color: #6a6a6a;
-}
-
-.filter-range {
-  width: 330px;
-
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-.filter-range legend {
-  margin: 0;
-  margin-bottom: 9px;
-
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 21px;
 }
 
 .price-controls {
