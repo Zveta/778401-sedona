@@ -145,13 +145,28 @@ img {
   color: #766357;
 }
 
+
 .intro {
-  background-image: url("../img/intro-block.png"),
-    url("../img/intro_image.jpg");
-  
+  position: relative;
+  background-image: url("../img/intro_image.jpg");
   background-color: #81b3d2;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-size: cover;
+  height: 508px;
+  background-position: 0% 21%;
+}
+
+.intro::after {
+  content: "";
+  position: absolute;
+  top: 451px;
+  left: 0;
+  
+  background-image: url(../img/intro-block.png);
+  background-repeat: no-repeat;
+  
+  width: 1200px;
+  height: 57px;
 }
 
 .intro-image {
@@ -235,11 +250,11 @@ img {
   margin: 0;
 }
 
-.feature-image img {
+/*.feature-image img {
   margin: 0;
   width: 800px;
   height: 256px;
-}
+}*/
 
 .feature-content.blue {
   margin-left: 47px;
@@ -278,7 +293,7 @@ img {
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 61px;
-  margin-bottom: 83px;
+  margin-bottom: 81px;
   
   width: 300px;
   line-height: 21px;
@@ -487,6 +502,7 @@ img {
 
 
 .calendar-icon {
+  content: "";
   position: absolute;
   margin: 0;
   
@@ -504,11 +520,11 @@ img {
   fill: #a9a9a9;
 }
 
-.calendar-icon path:hover {
+.calendar-icon:hover path {
   fill: #000000;
 }
 
-.calendar-icon path:active {
+.calendar-icon:active path {
   fill: #82b3d3;
 }
 
@@ -728,7 +744,7 @@ form .button {
   background-color: #81b3d2;
   background-image: url(../img/hotels_background.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0% 17%;
   background-size: cover;
 }
 
@@ -853,7 +869,6 @@ form .button {
 
   font-size: 14px;
   line-height: 21px;
-  /*vertical-align: top;*/
   text-align: center;
   
   vertical-align: middle;
@@ -865,8 +880,12 @@ form .button {
 .price-controls .max-price {
   margin: 0;
   padding: 0;
-  width: 50%;
-  padding-top: 6px;
+  padding-top: 5px;
+}
+
+.price-controls .min-price {
+  margin-right: 100px;
+  margin-left: 62px;
 }
 
 .price-controls input {
@@ -1153,24 +1172,53 @@ form .button {
   align-items: flex-end;
 }
 
-.star {
+/*.star {
   margin: 0;
   margin-right: 1px;
   margin-top: 2px;
-}
+}*/
 
-.star path {
+/*.star path {
   fill: #82b3d3;
   
-}
+}*/
 
 .rating {
   position: relative;
   color: #8b8b8b;
   background-color: #f2f2f2;
   
-  padding-left: 13px;
-  padding-right: 15px;
+  padding-left: 14px;
+  padding-right: 13px;
   padding-top: 4px;
   padding-bottom: 4px;
+}
+
+.rating::before {
+  content: "";
+  position: absolute;
+  font-size: 0;
+  top: -65px;
+  left: 35px;
+  
+  background-image: url(../img/star.svg);
+  background-repeat: repeat space;
+  background-size: contain;
+  
+  width: 75px;
+  height: 18px;
+}
+
+.rating.three-stars::before {
+  left: 55px;
+  
+  width: 58px;
+  height: 18px;
+}
+
+.rating.two-stars::before {
+  left: 71px;
+  
+  width: 40px;
+  height: 18px;
 }
