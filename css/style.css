@@ -77,8 +77,7 @@ img {
 .container {
   position: relative;
   
-  max-width: 1200px;
-	min-width: 768px;
+  width: 1200px;
   height: auto;
   
   margin: 0;
@@ -250,20 +249,15 @@ img {
   margin: 0;
 }
 
-/*.feature-image img {
-  margin: 0;
-  width: 800px;
-  height: 256px;
-}*/
-
 .feature-content.blue {
-  margin-left: 47px;
-  margin-right: 47px;
-  margin-top: 48px;
-  margin-bottom: 50px;
+  box-sizing: border-box;
+  width: 400px;
   
-  width: 306px;
-  
+  padding-left: 47px;
+  padding-right: 47px;
+  padding-top: 48px;
+  padding-bottom: 50px;
+
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -271,6 +265,7 @@ img {
   
   line-height: 21px;
 }
+
 
 .feature-content p {
   margin: 0;
@@ -283,25 +278,27 @@ img {
   padding: 0;
 }
 
-.advice-content {
+.advice-content {  
+  position: relative;
+  
+  box-sizing: border-box;
+  width: 400px;
   margin: 0;
   padding: 0;
   
   display: flex;
   flex-direction: column;
   
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 61px;
-  margin-bottom: 81px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 162px;
+  padding-bottom: 83px;
   
-  width: 300px;
   line-height: 21px;
 }
 
 .advice-content h3 {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
   margin-bottom: 23px;
   margin-left: auto;
   margin-right: auto;
@@ -309,17 +306,49 @@ img {
   font-size: 21px;
 }
 
-.advice-icon {
-  margin: 0;
-  margin-bottom: 26px;
+.advice-house::before {
+  content: "";
+  position: absolute;
+  font-size: 0;
+  top: 58px;
+  left: 161px;
+  
+  width: 76px;
+  height: 76px;
+  
+  background-image: url(../img/icon-house.svg);
+  background-repeat: no-repeat;
+  background-size: 76px 76px;
 }
 
-.advice-content.third {
-  margin-top: 57px;
+.advice-food::before {
+  content: "";
+  position: absolute;
+  font-size: 0;
+  top: 58px;
+  left: 162px;
+  
+  width: 76px;
+  height: 76px;
+  
+  background-image: url(../img/icon-food.svg);
+  background-repeat: no-repeat;
+  background-size: 76px 76px;
 }
 
-.advice-icon.third {
-  margin-bottom: 24px;
+.advice-gift::before {
+  content: "";
+  position: absolute;
+  font-size: 0;
+  top: 56px;
+  left: 162px;
+  
+  width: 76px;
+  height: 76px;
+  
+  background-image: url(../img/icon-gift.svg);
+  background-repeat: no-repeat;
+  background-size: 76px 76px;
 }
 
 .feature-list.brown {
@@ -327,12 +356,13 @@ img {
 }
 
 .feature-content.brown {
-  width: 268px;
+  box-sizing: border-box;
+  width: 400px;
   
-  margin-left: 66px;
-  margin-right: 66px;
-  margin-top: 47px;
-  margin-bottom: 60px;
+  padding-left: 66px;
+  padding-right: 66px;
+  padding-top: 47px;
+  padding-bottom: 62px;
   
   line-height: 21px;
 }
@@ -500,7 +530,6 @@ img {
   border: 2px solid #ebebeb;
 } 
 
-
 .calendar-icon {
   content: "";
   position: absolute;
@@ -559,20 +588,40 @@ img {
   justify-content: center;
 }
 
-.form-buttons-wrapper input {
+.form-buttons-wrapper input,
+.form-buttons-wrapper button {
   margin: 0;
   padding-top: 6px;
   padding-bottom: 6px;
-  padding-left: 9px;
-  padding-right: 9px;
+  /*padding-left: 9px;
+  padding-right: 9px;*/
   
   box-sizing: border-box;
-  width: 39px;
+  width: 38px;
   
   font: inherit;
   text-align: center;
   background-color: #f2f2f2;
   border: none;  
+}
+
+.form-buttons-wrapper button {
+  font-family: inherit;
+  font-size: 25px;
+  font-weight: bold;
+  
+  text-align: center;
+  vertical-align: middle;
+
+  color: #a9a9a9;
+}
+
+.form-buttons-wrapper button:hover {
+  color: #000000;
+}
+
+.form-buttons-wrapper button:active {
+  color: #82b3d3;
 }
 
 .form-buttons-wrapper:first-child {
@@ -649,11 +698,12 @@ form .button {
   width: 150px;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   
   padding: 0;
   margin: 0;
-  margin-top: auto;
-  margin-bottom: auto;
+  /*margin-top: auto;
+  margin-bottom: auto;*/
   margin-left: 239px;
   margin-right: 208px;
 
@@ -692,8 +742,8 @@ form .button {
 
 .copyright {
   margin: 0;
-  margin-top: auto;
-  margin-bottom: auto;
+  /*margin-top: auto;
+  margin-bottom: auto;*/
   margin-right: 101px;
   
   display: flex;
@@ -768,6 +818,7 @@ form .button {
 .filter legend {
   margin: 0;
   
+  color: #ffffff;
   font-size: 16px;
   font-weight: bold;
   line-height: 21px;
@@ -810,7 +861,7 @@ form .button {
   top: 0px;
   left: -40px;
 
-  width: 25px;
+  width: 26px;
   height: 25px;
   
   background-image: url("../img/checkbox-off.svg");
@@ -826,7 +877,7 @@ form .button {
   top: 0px;
   left: -40px;
 
-  width: 25px;
+  width: 26px;
   height: 25px;
   
   background-image: url("../img/checkbox-on.svg");
@@ -1008,7 +1059,7 @@ form .button {
 
 .sort-list li:nth-child(4) {
   margin-left: auto;
-  margin-right: 10px;
+  margin-right: 12px;
   
   border: none;
 }
@@ -1163,62 +1214,48 @@ form .button {
 }
 
 .hotel-class {
+  position: relative;
+  
   margin: 0;
   
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-content: flex-end;
   align-items: flex-end;
 }
 
-/*.star {
-  margin: 0;
-  margin-right: 1px;
-  margin-top: 2px;
-}*/
-
-/*.star path {
-  fill: #82b3d3;
-  
-}*/
-
 .rating {
-  position: relative;
   color: #8b8b8b;
   background-color: #f2f2f2;
   
   padding-left: 14px;
   padding-right: 13px;
-  padding-top: 4px;
-  padding-bottom: 4px;
 }
 
-.rating::before {
+.hotel-class::before {
   content: "";
   position: absolute;
   font-size: 0;
-  top: -65px;
-  left: 35px;
+  top: 4px;
+  left: 17px;
   
   background-image: url(../img/star.svg);
   background-repeat: repeat space;
   background-size: contain;
   
-  width: 75px;
-  height: 18px;
+  width: 100px;
+  height: 17px;
 }
 
-.rating.three-stars::before {
-  left: 55px;
+.three-stars::before {
+  left: 44px;
   
-  width: 58px;
-  height: 18px;
+  width: 70px;
 }
 
-.rating.two-stars::before {
-  left: 71px;
+.two-stars::before {
+  left: 65px;
   
-  width: 40px;
-  height: 18px;
+  width: 50px;
 }
