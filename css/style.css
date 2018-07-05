@@ -1,14 +1,11 @@
 body {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
-  
   margin: 0;
   padding: 0;
-  
   text-align: center;
   text-transform: uppercase;
-
   color: #000000;
   background-color: #f2f2f2;
 }
@@ -17,15 +14,12 @@ body {
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
-
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -35,18 +29,13 @@ input[type="radio"].visually-hidden {
   font-family: inherit;
   font-size: 21px;
   font-weight: bold;
-
- /* text-align: center;*/
   vertical-align: middle;
   text-transform: uppercase;
-
-  /*color: #ffffff;
-  background-color: #82b3d3;*/
-  border: none;  
+  border: none;
 }
 
 .button:hover {
-  color: #fff;
+  color: #ffffff;
   background-color: #669ebf;
 }
 
@@ -57,8 +46,7 @@ input[type="radio"].visually-hidden {
 
 a {
   text-decoration: none;
-
-  color: #000;
+  color: #000000;
 }
 
 a:hover {
@@ -76,50 +64,40 @@ img {
 
 .container {
   position: relative;
-  
   width: 1200px;
   height: auto;
-  
   margin: 0;
   padding: 0;
   margin-left: auto;
   margin-right: auto;
-
   background-color: #ffffff;
   box-shadow: 0 0 35px #a9a9a9;
 }
 
 .logo {
   position: absolute;
-
-  top: 0px;
+  top: 0;
   left: 530px;
-  
   height: 70px;
   width: 138px;
-  
-  z-index:1;
+  z-index: 1;
 }
 
 .site-navigation {
   font-weight: bold;
-
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  
   margin: 0;
   padding: 0;
   padding-left: 72px;
   padding-right: 72px;
-  
   align-items: center;
-
   list-style: none;
 }
 
 .site-navigation li {
-  margin:0;
+  margin: 0;
   padding-top: 14px;
   padding-bottom: 16px;
   width: 241px;
@@ -144,15 +122,14 @@ img {
   color: #766357;
 }
 
-
 .intro {
   position: relative;
-  background-image: url("../img/intro_image.jpg");
+  background-image: url("../img/intro-image.jpg");
   background-color: #81b3d2;
   background-repeat: no-repeat;
   background-size: cover;
   height: 508px;
-  background-position: 0% 21%;
+  background-position: 0 21%;
 }
 
 .intro::after {
@@ -160,10 +137,8 @@ img {
   position: absolute;
   top: 451px;
   left: 0;
-  
   background-image: url(../img/intro-block.png);
   background-repeat: no-repeat;
-  
   width: 1200px;
   height: 57px;
 }
@@ -173,10 +148,9 @@ img {
   margin-left: auto;
   padding-top: 75px;
   padding-bottom: 80px;
-
   width: 458px;
   height: 352px;
-  order:1;
+  order: 1;
 }
 
 .features-intro .title {
@@ -184,9 +158,7 @@ img {
   margin-right: auto;
   margin-top: 60px;
   margin-bottom: 28px;
-  
-  width:440px;
-  
+  width: 440px;
   font-size: 21px;
   font-weight: bold;
 }
@@ -201,7 +173,6 @@ img {
 .features {
   display: flex;
   flex-direction: column;
-  
   margin: 0;
 }
 
@@ -209,22 +180,18 @@ img {
 .advice-list {
   margin: 0;
   padding: 0;
-  
   display: flex;
   flex-direction: row;
-
   list-style: none;
 }
 
 .feature-content h3 {
   width: 151px;
-  
   margin: 0;
   padding: 0;
   margin-bottom: 22px;
   margin-left: auto;
   margin-right: auto;
-  
   font-size: 21px;
 }
 
@@ -234,7 +201,6 @@ img {
   padding: 0;
   display: flex;
   flex-direction: row;
-
   color: #ffffff;
   background-color: #81b3d2;
 }
@@ -252,17 +218,14 @@ img {
 .feature-content.blue {
   box-sizing: border-box;
   width: 400px;
-  
   padding-left: 47px;
   padding-right: 47px;
   padding-top: 48px;
   padding-bottom: 50px;
-
   display: flex;
   flex-direction: column;
   align-items: stretch;
   align-content: stretch;
-  
   line-height: 21px;
 }
 
@@ -278,22 +241,18 @@ img {
   padding: 0;
 }
 
-.advice-content {  
+.advice-content {
   position: relative;
-  
   box-sizing: border-box;
   width: 400px;
   margin: 0;
   padding: 0;
-  
   display: flex;
   flex-direction: column;
-  
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 162px;
   padding-bottom: 83px;
-  
   line-height: 21px;
 }
 
@@ -302,7 +261,6 @@ img {
   margin-bottom: 23px;
   margin-left: auto;
   margin-right: auto;
-  
   font-size: 21px;
 }
 
@@ -312,10 +270,8 @@ img {
   font-size: 0;
   top: 58px;
   left: 161px;
-  
   width: 76px;
   height: 76px;
-  
   background-image: url(../img/icon-house.svg);
   background-repeat: no-repeat;
   background-size: 76px 76px;
@@ -327,10 +283,8 @@ img {
   font-size: 0;
   top: 58px;
   left: 162px;
-  
   width: 76px;
   height: 76px;
-  
   background-image: url(../img/icon-food.svg);
   background-repeat: no-repeat;
   background-size: 76px 76px;
@@ -342,10 +296,8 @@ img {
   font-size: 0;
   top: 56px;
   left: 162px;
-  
   width: 76px;
   height: 76px;
-  
   background-image: url(../img/icon-gift.svg);
   background-repeat: no-repeat;
   background-size: 76px 76px;
@@ -358,12 +310,10 @@ img {
 .feature-content.brown {
   box-sizing: border-box;
   width: 400px;
-  
   padding-left: 66px;
   padding-right: 66px;
   padding-top: 47px;
   padding-bottom: 62px;
-  
   line-height: 21px;
 }
 
@@ -372,7 +322,6 @@ img {
   padding: 0;
   display: flex;
   flex-direction: column;
-
   justify-content: flex-end;
   align-items: center;
 }
@@ -381,7 +330,6 @@ img {
   padding: 0;
   margin-top: 50px;
   margin-bottom: 24px;
-  
   font-size: 30px;
   font-weight: bold;
   line-height: 36px;
@@ -391,7 +339,6 @@ img {
   margin: 0;
   margin-bottom: 46px;
   padding: 0;
-    
   font-weight: normal;
   line-height: 24px;
 }
@@ -403,10 +350,8 @@ img {
   padding-right: 139px;
   padding-top: 31px;
   padding-bottom: 31px;
-
   text-align: center;
   vertical-align: middle;
-
   color: #ffffff;
   background-color: #766357;
   border: none;
@@ -454,31 +399,25 @@ img {
   }
 }
 
-.modal-form {  
+.modal-form {
   position: absolute;
-  
   top: 2168px;
   left: 26.35%;
-  
   z-index: 2;
-  
   margin: 0;
   width: 458px;
   padding: 55px;
   text-align: left;
-  
-  display: none;
+  display: flex;
   flex-direction: column;
-  
   font-weight: bold;
   background-color: #ffffff;
   box-shadow: 0 0 20px #a9a9a9;
 }
 
-.modal-show {
-  display: flex;
-  
- animation: bounce 0.9s;
+.modal-close {
+  display: none;
+  animation: bounce 0.9s;
 }  
 
 .modal-error {
@@ -489,15 +428,14 @@ img {
   position: relative;
   padding: 0;
   margin: 0;
-  margin-bottom: 30px; 
-  
+  margin-bottom: 30px;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
 .date-field label {
-  margin-right: auto;  
+  margin-right: auto;
 }
 
 .date-field input {
@@ -505,13 +443,10 @@ img {
   padding-bottom: 6px;
   padding-left: 11px;
   padding-right: 9px;
-  
   box-sizing: border-box;
   width: 345px;
-  
   font: inherit;
   text-transform: uppercase;
-
   background-color: #f2f2f2;
   border: none;
 }
@@ -525,7 +460,6 @@ img {
   padding-bottom: 4px;
   padding-left: 9px;
   padding-right: 7px;
-  
   background: transparent;
   border: 2px solid #ebebeb;
 } 
@@ -534,13 +468,10 @@ img {
   content: "";
   position: absolute;
   margin: 0;
-  
   top: 7px;
   left: 422px;
-  
   width: 23px;
   height: 23px;
-  
   border: none;
   background-color: transparent;
 }
@@ -559,7 +490,6 @@ img {
 
 .number-wrapper {
   margin: 0;
-
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -568,10 +498,8 @@ img {
 
 .number-field {
   width: 230px;
-  
   padding: 0;
   margin: 0;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -583,7 +511,6 @@ img {
 
 .form-buttons-wrapper {
   margin: 0;
-
   display: flex;
   justify-content: center;
 }
@@ -593,26 +520,20 @@ img {
   margin: 0;
   padding-top: 6px;
   padding-bottom: 6px;
-  /*padding-left: 9px;
-  padding-right: 9px;*/
-  
   box-sizing: border-box;
   width: 38px;
-  
   font: inherit;
   text-align: center;
   background-color: #f2f2f2;
-  border: none;  
+  border: none;
 }
 
 .form-buttons-wrapper button {
   font-family: inherit;
   font-size: 25px;
   font-weight: bold;
-  
   text-align: center;
   vertical-align: middle;
-
   color: #a9a9a9;
 }
 
@@ -625,60 +546,52 @@ img {
 }
 
 .form-buttons-wrapper:first-child {
-  margin-right:50px;
+  margin-right: 50px;
 }
 
 form .button {
   display: inline-block;
-  
-  margin:0;
+  margin: 0;
   padding: 0;
   margin-top: 53px;
-  
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   vertical-align: middle;
-  
   padding-top: 17px;
   padding-bottom: 15px;
   width: 100%;
-
   color: #ffffff;
   background-color: #81b3d2;
 }
 
+.map {
+  background-image: url(../img/map.png);
+  background-color: #cee0ac;
+}
+
 .footer-wrapper {
-  width:100%;
-  
+  width: 100%;
   margin: 0;
   margin-bottom: 8px;
-  min-height: 120px;
-  
+  height: 120px;
   display: flex;
   justify-content: space-between;
-  
   background-color: #ffffff;
   background-position: top center;
   background-repeat: no-repeat;
-  
   text-align: center;
 }
 
 .footer-wrapper.index-page {
-  position:absolute;
+  position: absolute;
   bottom: 8px;
-  
-  width:100%;
-  
+  width: 100%;
   z-index: 2;
-  
   margin: 0;
   min-height: 120px;
-  
   display: flex;
   justify-content: space-between;
-  
   background-position: top center;
   background-repeat: no-repeat;
   opacity: 0.8;
@@ -687,10 +600,9 @@ form .button {
 .tag {
   font-size: 21px;
   font-weight: bold;
-  
   margin: 0;
   margin-top: 46px;
-  margin-left: 132px; 
+  margin-left: 132px;
 }
 
 .social-list {
@@ -699,14 +611,10 @@ form .button {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  
   padding: 0;
   margin: 0;
-  /*margin-top: auto;
-  margin-bottom: auto;*/
   margin-left: 239px;
   margin-right: 208px;
-
   list-style: none;
 }
 
@@ -723,7 +631,6 @@ form .button {
   justify-content: center;
   width: 46px;
   height: 48px;
-
   background-color: #82b3d3;
   border: none;
 }
@@ -742,59 +649,50 @@ form .button {
 
 .copyright {
   margin: 0;
-  /*margin-top: auto;
-  margin-bottom: auto;*/
   margin-right: 101px;
-  
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
   align-items: center;
-  
   width: 200px;
 }
 
-.copyright .button {
+.copyright-button {
   display: block;
   margin: 0;
-  
   width: 115px;
   height: 41px;
-  
   background-color: #ffffff;
 }
 
-.copyright .button path {
+.copyright-button path {
   fill: #000000;
 }
 
-.copyright .button:hover path {
+.copyright-button:hover path {
   fill: #82b3d3;
 }
 
-.copyright .button:active path {
+.copyright-button:active path {
   fill: #dddddd;
 }
 
 .filter {
   display: flex;
   flex-direction: row;
-  
   margin: 0;
   padding: 0;
   padding-top: 27px;
   padding-bottom: 32px;
   padding-left: 72px;
-  padding-right:72px;
-  
+  padding-right: 72px;
   line-height: 21px;
-
-  color: #fff;
+  color: #ffffff;
   background-color: #81b3d2;
-  background-image: url(../img/hotels_background.jpg);
+  background-image: url(../img/hotels-background.jpg);
   background-repeat: no-repeat;
-  background-position: 0% 17%;
+  background-position: 0 17%;
   background-size: cover;
 }
 
@@ -803,7 +701,6 @@ form .button {
   padding: 0;
   margin-right: 115px;
   border: none;
-
   text-align: left;
 }
 
@@ -817,7 +714,6 @@ form .button {
 
 .filter legend {
   margin: 0;
-  
   color: #ffffff;
   font-size: 16px;
   font-weight: bold;
@@ -827,14 +723,12 @@ form .button {
 
 .filter-group ul {
   margin: 0;
-  
   list-style: none;
 }
 
 .option-list {
   list-style: none;
   margin: 0;
-  
   display: flex;
   flex-direction: column;
 }
@@ -846,24 +740,18 @@ form .button {
 
 .option label {
   position: relative;
-
   display: block;
-
   cursor: pointer;
   user-select: none;
 }
 
 .checkbox + label::after {
   content: "";
-
   position: absolute;
-  
-  top: 0px;
+  top: 0;
   left: -40px;
-
   width: 26px;
   height: 25px;
-  
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -871,33 +759,30 @@ form .button {
 
 .checkbox:checked + label::after {
   content: "";
-
   position: absolute;
-  
-  top: 0px;
+  top: 0;
   left: -40px;
-
   width: 26px;
   height: 25px;
-  
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.filter .checkbox:disabled path {
+.checkbox:focus + label::after {
+  border: 1px solid #6b9cc4;
+}
+
+.checkbox:disabled path {
   fill: #6a6a6a;
 }
 
 .price-controls {
   position: relative;
-  
   height: 33px;
   margin-bottom: 20px;
   margin-top: 10px;
-
   font-size: 0;
-
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
@@ -907,23 +792,18 @@ form .button {
   position: absolute;
   top: 50%;
   left: 50%;
-
   width: 2px;
   height: 22px;
-
   background: #ffffff;
   transform: translate(-50%, -50%);
 }
 
 .price-controls label {
   display: inline-block;
-
   font-size: 14px;
   line-height: 21px;
   text-align: center;
-  
   vertical-align: middle;
-
   cursor: pointer;
 }
 
@@ -942,44 +822,38 @@ form .button {
 .price-controls input {
   width: 30px;
   margin: 0;
-
   color: inherit;
   font: inherit;
-
   background: none;
   border: none;
 }
 
 .range-controls {
   position: relative;
-
   margin-bottom: 32px;
 }
 
 .range-controls .scale {
   height: 2px;
-
-  background: rgba(255, 255, 255, 0.3);
+  background: #ffffff;
 }
 
 .range-controls .bar {
   width: 80%;
   height: 2px;
-
   background: #ffffff;
 }
 
 .range-toggle {
   position: absolute;
   top: -9px;
-
   width: 4px;
   height: 4px;
-
-  background: #ababab;
+  padding: 2px 2px;
+  background: #cacaca;
   border: 8px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  box-shadow: 0 2px 1px 0 #cccccc;
   cursor: pointer;
 }
 
@@ -992,7 +866,7 @@ form .button {
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+  background: #ababab;
 }
 
 .button-transparent {
@@ -1000,12 +874,10 @@ form .button {
   margin: 0 auto;
   margin-right: 97px;
   padding: 6px 30px;
-
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
-
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -1013,30 +885,25 @@ form .button {
 
 .button-transparent:hover {
   color: #000000;
-
   background: #ffffff;
 }
 
 .sort-form {
   font-size: 12px;
   line-height: 18px;
-
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
   padding-top: 35px;
   padding-right: 72px;
   padding-bottom: 34px;
   padding-left: 72px;
-  
   border-bottom: 1px solid #dddddd;
 }
 
 .found {
   font-size: 21px;
   font-weight: bold;
-  
   margin: 0;
   margin-right: 47px;
 }
@@ -1047,32 +914,26 @@ form .button {
 
 .sort-list {
   margin: 0;
-    
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  
   width: 776px;
-
   list-style: none;
 }
 
 .sort-list li:nth-child(4) {
   margin-left: auto;
   margin-right: 12px;
-  
   border: none;
 }
 
 .sort-list li:last-child {
   margin: 0;
-  
   border: none;
 }
 
 .sort-item a {
   margin-right: 33px;
-  
   color: #dddddd;
   border-bottom: 1px dotted #82b3d3;
 }
@@ -1096,7 +957,7 @@ form .button {
 }
 
 .order a:hover path {
-  fill: #000;
+  fill: #000000;
 }
 
 .order a:active path {
@@ -1110,7 +971,6 @@ form .button {
 .hotels-list {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
@@ -1119,11 +979,9 @@ form .button {
   padding-right: 72px;
   padding-bottom: 31px;
   padding-top: 24px;
-  
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  
   border-bottom: 1px solid #dddddd;
 }
 
@@ -1131,21 +989,19 @@ form .button {
   margin: 0;
   padding: 0;
   padding-top: 5px;
-  
   width: 135px;
   height: 90px;
 }
 
-.hotel-description {  
+.hotel-description {
   margin: 0 auto 0 30px;
   display: flex;
   flex-direction: column;
-  align-items:flex-start;  
+  align-items: flex-start;
 }
 
 .hotel-description h3 {
   margin: 0;
-    
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
@@ -1183,25 +1039,21 @@ form .button {
   font-size: 14px;
   line-height: 21px;
   font-weight: bold;
-  
   display: inline-block;
-  
   margin: 0;
   padding-left: 17px;
   padding-right: 16px;
   padding-top: 2px;
   padding-bottom: 4px;
-
   text-align: center;
   vertical-align: middle;
-
   color: #ffffff;
   border: none;
   background-color: #82b3d3;
 }
 
 .button.book {
-  background-color: #766357;  
+  background-color: #766357;
 }
 
 .button.book:hover {
@@ -1215,9 +1067,7 @@ form .button {
 
 .hotel-class {
   position: relative;
-  
   margin: 0;
-  
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -1228,7 +1078,6 @@ form .button {
 .rating {
   color: #8b8b8b;
   background-color: #f2f2f2;
-  
   padding-left: 14px;
   padding-right: 13px;
 }
@@ -1239,23 +1088,19 @@ form .button {
   font-size: 0;
   top: 4px;
   left: 17px;
-  
   background-image: url(../img/star.svg);
   background-repeat: repeat space;
   background-size: contain;
-  
   width: 100px;
   height: 17px;
 }
 
 .three-stars::before {
   left: 44px;
-  
   width: 70px;
 }
 
 .two-stars::before {
   left: 65px;
-  
   width: 50px;
 }
